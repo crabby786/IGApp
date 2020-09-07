@@ -1,0 +1,79 @@
+body,
+html {
+  color: #7d7d7d;
+  font-size: 14px;
+}
+p {
+  margin-bottom: 4px;
+}
+
+.head-left > div {
+  padding: 4px;
+}
+.navbar {
+  border-bottom: 1px solid #9a9a9a;
+}
+.navbar > h5 {
+  line-height: 1;
+  margin: 0;
+}
+.co-detail .detail > h5 {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 16px;
+}
+.co-detail .detail > p {
+  margin-bottom: 2px;
+}
+.co-detail .detail {
+  flex: 0 48%;
+  padding: 0 8px;
+}
+.co-detail .detail:nth-child(odd) {
+  margin-left: 25px;
+}
+.co-detail {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* .list-container {
+  display: flex;
+  flex-wrap: wrap;
+} */
+.list-item {
+  border-left: 6px solid skyblue;
+  display: inline-flex;
+  box-shadow: 0 1px 2px #b9b9b9;
+  width: 400px;
+  height: 120px;
+  overflow: hidden;
+  margin: 20px;
+  padding: 8px;
+}
+.list-item .detail {
+  padding: 8px;
+}
+.list-item .detail .expand {
+  height: 0;
+  transition: all 500 fade-in;
+}
+.list-item .detail .expand.view {
+  height: initial;
+}
+.list-item .avatar img {
+  height: 60px;
+  width: 60px;
+}
+.list-loader {
+  height: 60px;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .list-item {
+    width: 100%;
+    margin: 8px;
+  }
+}
